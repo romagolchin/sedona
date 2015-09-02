@@ -1,7 +1,18 @@
-/*body {
+body {
 	margin: 0;
-	width: 0;
-}*/
+	padding: 0;
+	background-color: ;
+	font-family: PT Sans, Tahoma, Arial;
+	color: ;
+}
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	color: #1c1;
+}
+nav ul li {
+	width: 20%;
+}
 nav ul li:nth-child(1) {
 	float: left;
 	display: inline;
@@ -19,9 +30,53 @@ nav ul li:nth-child(4) {
 	display: inline;
 }
 
+.jumbotron {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.main-heading: {
+	text-align: center;
+	color: #1c1;
+}
 .advantages-town {
-	float: left;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	background-color: ;
 }
 .advantages-town-image {
-	float: left;
+	display: inline-block;
+	width: 50%;
+}
+.advantages-row-pictures div {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+.advantages-devil-image {
+	display: inline-block;
+	width: 50%;
+	margin-right: 25%;
+}
+
+.advantages-devil {
+	background-color: ;
+	display: inline-block;
+	width: 20%;
+}
+
+.advantages-row-more div {
+	display: inline-block;
+	width: 30%;
+}
+
+.main-footer .container div {
+	display: inline-block;
+	width: 30%;
+}
+
+.footer {
+	background-color: #00ffff;
 }

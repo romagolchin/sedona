@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>visit sedona!</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -24,7 +23,7 @@
             </li>
           </ul>
         </nav>
-        <a href=""><img src="./img/emblem.png" alt="city of sedona" width="135"></a>
+        <img src="http://placehold.it/150x100" alt="city of sedona">
       </div>
     </header>
  
@@ -110,20 +109,18 @@
  
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-hashtag">
-          <a href="#">#VISITSEDONA</a>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li><a href="#" class="social-btn social-btn-tw"></a></li>
-            <li><a href="#" class="social-btn social-btn-fb"></a></li>
-            <li><a href="#" class="social-btn social-btn-yt"></a></li>
-          </ul>
-        </div>
-        <div class="footer-copyright">
-          <p>WEBSITE BY</p>
+        <section class="footer-hashtag">
+          <a href="#">#visitsedona</a>
+        </section>
+        <section class="footer-social">
+          <a href="#" class="social-btn social-btn-tw"></a>
+          <a href="#" class="social-btn social-btn-fb"></a>
+          <a href="#" class="social-btn social-btn-yt"></a>
+        </section>
+        <section class="footer-copyright">
+          <p>website by</p>
           <a href="#" class="btn">htmlacademy.ru</a>
-        </div>
+        </section>
       </div>
     </footer>
   </body>

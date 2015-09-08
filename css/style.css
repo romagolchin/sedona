@@ -1,14 +1,15 @@
+
 body {
 	margin: 0;
 	padding: 0;
-	background-color: ;
-	font-family: px Sans, Tahoma, Arial;
+	font-family: PT Sans, Tahoma, Arial;
 	color: #000;
 	font-size: 14px;
-	text-align: center;
 	text-transform: uppercase;
 	font-weight: normal;
+	text-align: center;
 }
+
 h1, h2 {
 	font-size: 21px;
 }
@@ -57,16 +58,15 @@ nav ul li:nth-child(4) {
 	left: 33%;
 }
 .container-advantages {
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 .container-hotels {
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-}
-header a {
-	z-index: 2;
 }
 .main-heading {
 	text-align: center;
@@ -74,46 +74,46 @@ header a {
 	margin-bottom: 50px;
 }
 .advantages-row-true-town {
-	margin-bottom: 50px;
-	display: inline-block;
+	width: auto;
 }
 .advantages-town {
-	min-height: 256px;
-	max-height: 256px;
-	width: 30%;
-	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
 	background-color: #81b3d2;
 	color: #fff;
+	min-height: 256px;
 }
 .advantages-town-image {
-	width: 60%;
+	vertical-align: top;
+	display: inline-block;
+	width: 66.6%;
 }
 .advantages-row-pictures div {
 	display: inline-block;
-	padding: 57 74px;
-	width: 33%;
-	min-height: 330px;
-	vertical-align: middle;
+	width: 33.3%;
 }
 
 .advantages-row-devil {
-	display: inline-block;
+	width: auto;
 }
 .advantages-devil-image {
+	vertical-align: top;
 	display: inline-block;
-	width: 66%;
+	width: 66.6%;
 }
 
 .advantages-devil {
+	vertical-align: top;
 	min-height: 256px;
 	display: inline-block;
-	width: 30%;
+	width: 33.3%;
 	background-color: #81b3d2;
 	color: #fff;
-	margin-bottom: 100px;
 }
 
 .advantages-row-more div {
+	vertical-align: top;
 	min-height: 256px;
 	display: inline-block;
 	width: 33%;
@@ -121,18 +121,19 @@ header a {
 }
 .hotels-title {
 	font-size: 30px;
+	position: relative;
 }
 
 .hotels-annotaion {
 	margin-bottom: 190px;
+	position: relative;
 }
 .hotel-form {
-	left: 50%;
+	left: 30%;
 	top: 200px;
 	position: absolute;
 	min-height: 475px;
 	width: 565px;
-	margin-left: -20%;
 	background-color: #fff;
 }
 .form-title {
@@ -144,10 +145,9 @@ header a {
 
 .main-footer .container div {
 	display: inline-block;
-	width: 30%;
+	width: 33%;
 }
 
-/*hotels*/
 .filter div {
 	display: inline-block;
 	width: 33%;
@@ -155,6 +155,15 @@ header a {
 .hotels-row li {
 	display: inline;
 }
+.filter {
+	background-image: url(../img/filter-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 1000px;
+	min-height: 500px;
+}
+
+
+
 footer {
 	background-color: #fff;
 }

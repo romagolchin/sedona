@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>visit sedona!</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   </head>
   <body>
+  <div class="index_sedona_wrapper">
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
@@ -35,7 +37,7 @@
     <div class="jumbo-text">
       <img src="./img/jumbo-text.png" >
     </div>
-    <h1>седона — небольшой городок в аризоне, 
+    <h1>седона — небольшой городок в аризоне, <br>
       заслуживающий большего!
     </h1>
     <h2>рассмотрим 5 причин, по которым седона круче чем гранд каньон!</h2>
@@ -43,8 +45,9 @@
       <div class="advantages">
         <div class="advantages-row-true-town">
           <div class="advantages-town">
-            <h2>настоящий городок</h2>
-            <p>— №1 —<br>
+            <h2>настоящий <br> городок</h2>
+            <span>— №1 —</span><br>
+            <p>
               седона не аттракцион для туристов, <br>
               там течет своя жизнь
             </p>
@@ -84,7 +87,7 @@
             <img src="./img/devil.jpg" alt="devil bridge" width="800">
           </div><!--
           --><div class="advantages-devil">
-            <h2>там есть мост дьявола</h2>
+            <h2>там есть <br>мост дьявола</h2>
             <p>— №2 —<br>
               да, по нему можно пройти! <br>
               если конечно вы осмелитесь
@@ -93,21 +96,21 @@
         </div><!--
         --><div class="advantages-row-more">
           <div class="advantages-area">
-            <h2>небольшая площадь</h2>
+            <h2>небольшая <br> площадь</h2>
             <p>— №3 —<br>
               все достопримеча-<br>
               тельности находятся очень близко
             </p>
           </div><!--
           --><div class="advantages-road">
-            <h2>красивая дорога</h2>
+            <h2>красивая <br> дорога</h2>
             <p>— №4 —<br>
               ехать в седону из лас-вегаса совсем <br>
               не скучно!
             </p>
           </div><!--
           --><div class="advantages-not-crowded">
-            <h2>мало туристов</h2>
+            <h2>мало <br> туристов</h2>
             <p>— №5 — <br>
               большинство едет в гранд каньон и толпится там
             </p>
@@ -122,12 +125,12 @@
       </p>
       <img src="./img/map.png" alt="map" width="1200">
       <div class="hotel-form">
-        <div class="form-title">поиск гостиницы в седоне</div>
+        <div class="form-title"><p>поиск гостиницы в седоне</p></div>
         <form action="/echo" method="post">
-          <input type="date" name="date" value="" placeholder="дата заезда">
-          <input type="time" name="time" value="" placeholder="дата выезда">
-          <input type="text" name="name" value="" placeholder="взрослые">
-          <input type="tel" name="phone" value="" placeholder="дети">
+          <label>дата заезда:<input type="date" name="arriv" value=""></label><br>
+          <label>дата выезда:<input type="date" name="depart" value=""></label><br>
+          <label>взрослые:<input type="text" name="num-adults" value=""></label><br>
+          <label>дети:<input type="text" name="num-kids" value=""></label><br>
           <button type="submit" class="btn">найти</button>
         </form>
       </div>
@@ -151,5 +154,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

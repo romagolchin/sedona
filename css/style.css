@@ -6,11 +6,17 @@ body {
 	color: #000;
 	font-size: 14px;
 	text-transform: uppercase;
-	font-weight: normal;
 	text-align: center;
 	background-color: #f2f2f2;
 }
-
+.sedona-wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
 h1, h2 {
 	font-size: 21px;
 	font-weight: normal;
@@ -18,13 +24,12 @@ h1, h2 {
 h1 {
 	margin-bottom: 40px;
 }
+input, label {
+	margin: 0;
+	padding: 0;
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-button {
-	button-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -36,11 +41,11 @@ nav {
 
 .main-header a {
 	position: relative;
+	
 	z-index: 1;
 }
 nav ul li {
 	width: 20%;
-	/*display: inline-block;*/
 }
 nav ul li:nth-child(1) {
 	float: left;
@@ -58,10 +63,17 @@ nav ul li:nth-child(4) {
 	float: right;
 	display: inline;
 }
+nav li {
+	margin-top: 17px;
+}
 .jumbotron {
+	background-image: url(../img/jumbotron.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 510px;
 	position: relative;
 	z-index: 0;
-	margin-top: -20px;
+	margin-top: -15px;
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
@@ -69,7 +81,7 @@ nav ul li:nth-child(4) {
 }
 .jumbo-text {
 	position: absolute;
-	top: 125px;
+	top: 75px;
 	left: 50%;
 	margin-left: -229px;
 }
@@ -92,13 +104,15 @@ nav ul li:nth-child(4) {
 .advantages-row-true-town {
 	width: auto;
 }
-.advantages-town {
+.advantages-row-true-town div {
 	display: inline-block;
 	vertical-align: top;
+	min-height: 256px;
+}
+.advantages-town {
 	width: 33.33%;
 	background-color: #81b3d2;
 	color: #fff;
-	min-height: 256px;
 }
 .advantages-town h2 {
 	margin-top: 58px;
@@ -110,43 +124,69 @@ nav ul li:nth-child(4) {
 	margin-top: 30px;
 }
 .advantages-town-image {
-	vertical-align: top;
-	display: inline-block;
-	width: 66.66%;
+	width: 66.67%;
+	background-image: url(../img/city-view.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.advantages-row-pictures {
+	min-height: 330px;
 }
 .advantages-row-pictures div {
 	display: inline-block;
 	width: 33.33%;
-	min-height: 330px;
 }
 .advantages-row-pictures div img{
-	margin-top: 62px;
+	margin-top: 42px;
+	margin-bottom: 30px;
 }
 .advantages-row-pictures div h2{
-	margin-top: 30px;
+	margin-top: 0;
+	margin-bottom: 30px;
+
 }
 .advantages-row-pictures div p{
-	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .advantages-row-devil {
 	width: auto;
 }
-.advantages-devil-image {
-	vertical-align: top;
+.advantages-row-devil div {
 	display: inline-block;
-	width: 66.66%;
-}
-
-.advantages-devil {
 	vertical-align: top;
 	min-height: 256px;
-	display: inline-block;
+}
+.advantages-devil-image {
+	width: 66.67%;
+	background-image: url(../img/devil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.advantages-devil {
 	width: 33.33%;
 	background-color: #81b3d2;
 	color: #fff;
 }
+.advantages-devil h2 {
+	margin-top: 50px;
+}
+.advantages-devil span {
+	margin-top: 30px;
+}
+.advantages-devil p {
+	margin-top: 30px;
+}
 .advantages-row-more {
 	margin-bottom: 60px;
+}
+.advantages-row-more h2 {
+	margin-top: 50px;
+}
+.advantages-row-more span {
+	margin-top: 30px;
+}
+.advantages-row-more p {
+	margin-top: 30px;
 }
 .advantages-row-more div {
 	vertical-align: top;
@@ -164,12 +204,19 @@ nav ul li:nth-child(4) {
 }
 
 .hotels-annotaion {
-	margin-bottom: 190px;
+	margin-bottom: 135px;
 	position: relative;
+}
+.map {
+	background-image: url(../img/map.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 595px;
+	margin-bottom: -120px;
 }
 .hotel-form {
 	left: 50%;
-	top: 170px;
+	top: 115px;
 	margin-left: -283px;
 	position: absolute;
 	min-height: 475px;
@@ -181,52 +228,170 @@ nav ul li:nth-child(4) {
 	min-height: 85px;
 	background-color: #766357;
 	color: #fff;
-	padding: 0;
 }
-form label input {
+.hotel-form form input {
 	display: inline-block;
-	margin: 30px auto;
+	margin-bottom: 30px;
+	margin-left: 20px;
 	width: 344px;
 	min-height: 36px;
 }
-form input:nth-child(3), form input:nth-child(4) {
+form input[name="num-adults"] {
+	width: 114px;
+} 
+form input[name="num-kids"] {
 	width: 114px;
 } 
 button[type="submit"] {
-	width: 70%;
+	width: 81%;
 	background-color: #81b3d2;
 	min-height: 58px;
 	color: #fff;
 	text-transform: uppercase;
 }
-.filter div {
+
+/*hotels*/
+
+form input[type="checkbox"] {
+	margin-right: 20px;
+} 
+.filter {
+	margin-top: -15px;
+	background-image: url(../img/filter-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-height: 215px;
+	font-size: 14px;
+}
+.filter form {
+	max-height: 215px;
 	display: inline-block;
-	width: 33.33%;
+	width: 100%;
+	text-align: left;
+}
+.filter .filter-right-column {
+	display: none;
+}
+.filter form div {
+	display: inline-block;
+	vertical-align: top;
+	width: 21.25%;
+	color: #fff;
+	min-height: 215px;
+	text-align: left;
+}
+.filter div .checkbox-list {
+	width: 100%;
+	line-height: 46px;
+}
+.filter h3 {
+	margin-bottom: 0;
+}
+.filter .features {
+	margin-left: 6.1%;
+}
+.hotels-row {
+	min-height: 50px;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 35px;
 }
 .hotels-row li {
 	display: inline;
 }
-.index_sedona_wrapper {
-    min-width: 768px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    overflow: hidden;
+.hotels-row li, .hotels-row .found-number {
+	display: inline;
+	margin-left: 40px;
 }
-.filter {
-	background-image: url(../img/filter-background.jpg);
-	background-repeat: no-repeat;
-	background-size: 1000px;
-	min-height: 500px;
+.hotels-row div {
+	display: inline-block;
 }
-
-
-
+.hotels-row .found-number {
+	font-size: 21px;
+	margin-right: 4.6%;
+}
+.hotels-row li {
+	width: 6.8%;
+}
+.hotel-info {
+	border-top: 1px solid #e5e5e5;
+	width: auto;
+	min-height: 150px;
+}
+.hotel-info:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+.hotel-info div {
+	display: inline-block;
+	vertical-align: top;
+}
+.hotel-info .hotel-image {
+	min-width: 13.8%;
+	margin-left: 0;
+	margin-top: 30px;
+	text-align: left;
+}
+.hotel-info .descr {
+	width: 25.4%;
+}
+.hotel-info .descr h2 {
+	margin-top: 30px;
+	padding-left: 2.5%;
+}
+.hotel-info .stars-and-rating {
+	width: 40%;
+	text-align: right;
+	padding-right: 40px;
+}
+.hotel-info .stars-and-rating .rating {
+	margin-top: 95px;
+}
+a.btn {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-blue {
+	background: #81b3d2;
+}
+.btn-brown {
+	background: #766357;
+}
 footer {
 	background-color: #fff;
+	min-height: 120px;
+	opacity: .9;
+	text-align: center;
 }
 .main-footer .container div {
+	text-align: center;
 	vertical-align: top;
 	display: inline-block;
 	width: 33.33%;
+	min-height: 110px;
+}
+.social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #bdc3c7;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-tw {
+
+}
+
+.social-fb {
+
+}
+
+.social-yt {
+
 }

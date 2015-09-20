@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>visit sedona!</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
@@ -33,26 +34,35 @@
     <div class="container">
       <div class="filter">
         <form action="">
-          <div class="features"><h3>инфраструктура:</h3><br>
+          <div class="features"><h2>инфраструктура:</h2><br>
               <div class="checkbox-list">
-                <label><input type="checkbox">бассейн</label><br>
-                <label><input type="checkbox">парковка</label><br>
-                <label><input type="checkbox">wi-fi</label><br>
+                <div><input type="checkbox">
+                <label for="">бассейн</label></div><br>
+                <div><input type="checkbox">
+                <label for="">парковка</label></div><br>
+                <div><input type="checkbox">
+                <label for="">wi-fi</label></div>
               </div>
           </div>
-          <div class="type"><h3>тип жилья:</h3><br>
+          <div class="type"><h2>тип жилья:</h2><br>
               <div class="checkbox-list"> 
-                <label><input type="checkbox">гостиница</label><br>
-                <label><input type="checkbox">мотель</label><br>
-                <label><input type="checkbox">апартаменты</label><br>
+                <div><input type="checkbox"><label for="">гостиница</label></div><br>
+                <div><input type="checkbox"><label for="">мотель</label></div><br>
+                <div><input type="checkbox"><label for="">апартаменты</label></div>
               </div>
           </div>
           <div class="filter-right-column">
-            <h3>стоимость в сутки(р):</h3><br>
+            <h2>стоимость в сутки(р):</h2><br>
             <div class="range-filter">
               <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <div class="min-price">
+                  <label>от </label>
+                  <input name="min-price" type="text" value="0">
+                </div>
+                <div class="max-price">
+                  <label>до </label>
+                  <input name="max-price" type="text" value="15000">
+                </div>
                 <div class="internal-border"></div>
               </div>
               <div class="range-controls">

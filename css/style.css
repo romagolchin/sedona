@@ -143,6 +143,10 @@ nav ul li:nth-child(4) {
 nav li {
 	margin-top: 17px;
 }
+nav li a:hover {
+	color: #81b3d2;
+}
+
 .jumbotron {
 	background-image: url(../img/jumbotron.jpg);
 	background-repeat: no-repeat;
@@ -173,12 +177,11 @@ nav li {
 	margin-right: auto;
 	position: relative;
 }
-.main-heading {
-	text-align: center;
-	color: #000;
-	margin-bottom: 50px;
+.container-advantages h1 {
+	margin-bottom: 33px;
 }
 .advantages-row-true-town {
+	margin-top: 55px;
 	width: auto;
 }
 .advantages-row-true-town div {
@@ -192,7 +195,7 @@ nav li {
 	color: #fff;
 }
 .advantages-town h2 {
-	margin-top: 58px;
+	margin-top: 49px;
 }
 .advantages-town span {
 	margin-top: 30px;
@@ -254,7 +257,7 @@ nav li {
 	margin-top: 30px;
 }
 .advantages-row-more {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .advantages-row-more h2 {
 	margin-top: 50px;
@@ -281,8 +284,9 @@ nav li {
 }
 
 .hotels-annotaion {
-	margin-bottom: 135px;
+	margin-bottom: 155px;
 	position: relative;
+	line-height: 24px;
 }
 .map {
 	background-image: url(../img/map.png);
@@ -293,7 +297,7 @@ nav li {
 }
 .hotel-form {
 	left: 50%;
-	top: 115px;
+	top: 157px;
 	margin-left: -283px;
 	position: absolute;
 	min-height: 483px;
@@ -303,12 +307,14 @@ nav li {
 }
 .form-title {
 	font-size: 30px;
-	min-height: 85px;
+	min-height: 28px;
+	padding: 30px 0;
 	background-color: #766357;
 	color: #fff;
 }
 .form-title h2 {
-	margin-top: 32px;
+	margin: 0;
+	padding: 0;
 }
 .hotel-form input {
 	display: inline-block;
@@ -453,7 +459,7 @@ form input[type="checkbox"]::before {
   position: relative;
   max-height: 41px;
   min-width: 330px;
-  padding-top: 39px;
+  padding-top: 25px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 15px;
@@ -464,13 +470,13 @@ form input[type="checkbox"]::before {
 .range-controls .scale {
 	display: block;
   height: 2px;
-  background: #f2f2f2;
-  width: 306px;
+  background: #918382;
+  width: 308px;
 }
 
 .range-controls .bar {
 	display: block;
-  width: 250px;
+  width: 253px;
   height: 2px;
   background: #fff;
 }
@@ -478,8 +484,7 @@ form input[type="checkbox"]::before {
 .range-controls .toggle {
 	display: block;
   position: absolute;
-  top: 30px;
-  left: 0px;
+  top: 16px;
   width: 4px;
   max-height: 4px;
   cursor: pointer;
@@ -491,12 +496,12 @@ form input[type="checkbox"]::before {
 
 .range-controls .toggle-min {
 	display: block;
-  left: 50px;
+  left: 0px;
 }
 
 .range-controls .toggle-max {
 	display: block;
-  left: 110px;
+  left: 253px;
 }
 
 .price-controls {
@@ -504,7 +509,8 @@ form input[type="checkbox"]::before {
   border: 2px solid #fff;
   position: relative;
   width: 315px;
-  min-height: 26px;
+  max-height: 18px;
+  padding: 7px 0;
 }
 .price-controls .internal-border {
 	width: 2px;
@@ -515,18 +521,22 @@ form input[type="checkbox"]::before {
 	top: 5px;
 }
 .price-controls label {
-  font-size: 16px;
+  font-size: 14px;
   display: inline;
   width: 50%;
-  margin-top: 17px;
+}
+.filter .price-controls input {
+	font-size: 14px;
+	text-align: left;
+	width: 35px;
 }
 
-.min-price, .max-price {
+.filter .min-price,
+.filter .max-price {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	padding: 11px 0;
 }
 .price-controls input {
 	text-align: left;
@@ -546,7 +556,7 @@ form input[type="checkbox"]::before {
 	left: 50%;
 	width: 135px;
 	min-height: 35px;
-	margin-left: -100px;
+	margin-left: -85px;
 	text-transform: uppercase;
 	border: 2px solid #fff;
 }
@@ -570,6 +580,22 @@ form input[type="checkbox"]::before {
 	display: inline;
 	margin-left: 73px;
 	width: 6.8%;
+}
+.hotels-row li a {
+	border-bottom: 1px dashed #81b3d2;
+	color: #000;
+	opacity: .6;
+}
+.hotels-row li a:hover {
+	border-bottom: 1px dashed #81b3d2;
+	color: #81b3d2;
+	opacity: .6;
+}
+.hotels-row li a:active {
+	
+}
+.hotels-row li a:visited {
+	color: #81b3d2;
 }
 .hotels-row div {
 	display: inline;
@@ -611,16 +637,21 @@ form input[type="checkbox"]::before {
 	padding-left: 73px;
 }
 .hotel-info .descr {
-	width: 25.4%;
+	width: 40%;
 }
 .hotel-info .descr h2 {
 	margin-top: 30px;
 }
+.hotel-info .descr h2:hover {
+	color: #81b3d2;
+}
+.hotel-info .descr h2:active {
+	opacity: .3;
+}
 a.btn {
   display: inline-block;
-  height: 11px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  height: 15px;
+  padding: 6px 0;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -632,9 +663,21 @@ a.btn {
 	width: 110px;
 	margin-right: 6px;
 }
+.btn-blue:hover {
+	background-color: #669ec0;
+}
+.btn-blue:active {
+	background-color: #5496bd;
+}
 .btn-brown {
 	background: #766357;
 	width: 142px;
+}
+.btn-brown:hover{
+	background-color: #604e43;
+}
+.btn-brown:active {
+	background-color: #503e33;
 }
 .hotel-info .hotel-type {
 	display: inline-block;
@@ -642,7 +685,7 @@ a.btn {
 	margin-bottom: 20px;
 }
 .hotel-info .stars-and-rating {
-	width: 44.5%;
+	width: 25.5%;
 	text-align: right;
 	padding-right: 40px;
 }
@@ -687,7 +730,7 @@ footer {
 .social-btn {
     display: inline-block;
     min-width: 45px;
-    min-height: 37px;
+    min-height: 21px;
     background: #81b3d2;
     margin-right: 10px;
     vertical-align: middle;
@@ -696,7 +739,7 @@ footer {
     font-family: 'symbols-sedona';
     text-align: center;
     font-size: 21px;
-    padding-top: 8px;
+    padding: 12px 0;
 }
 .social-btn:hover {
 	background-color: #669ec0;
@@ -715,4 +758,8 @@ footer {
 
 .social-yt::before {
 	content: '\f39e';
+}
+.main-footer .container .footer-copyright div {
+	margin: 15px 0 0 0;
+	width: 80px;
 }

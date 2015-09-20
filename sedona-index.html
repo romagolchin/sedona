@@ -126,16 +126,18 @@
       <div class="map">
       </div>
       <div class="hotel-form">
-        <div class="form-title"><p>поиск гостиницы в седоне</p></div>
+        <div class="form-title"><h2>поиск гостиницы в седоне</h2></div>
         <form action="/echo" method="post">
           <label for="arriv">дата заезда:</label>
           <input type="date" id="arriv"><br>
           <label for="depart">дата выезда:</label>
           <input type="date" id="depart"><br>
-          <label for="num-adults">взрослые:</label>
-          <input type="text" id="num-adults"><br>
-          <label for="num-kids">дети:</label>
-          <input type="text" id="num-kids"><br>
+          <div class="adults-kids">
+            <label for="num-adults">взрослые:</label>
+            <input type="text" id="num-adults" value="2">
+            <label for="num-kids">дети:</label>
+            <input type="text" id="num-kids" value="0"><br>
+          </div>
           <button type="submit" class="btn">найти</button>
         </form>
       </div>
@@ -147,14 +149,12 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="footer-social">
-          <ul>
-            <li><a href="#" class="social-btn social-tw"></a></li>
-            <li><a href="#" class="social-btn social-fb"></a></li>
-            <li><a href="#" class="social-btn social-yt"></a></li>
-          </ul>
+            <a href="#" class="social-btn social-tw"></a>
+            <a href="#" class="social-btn social-fb"></a>
+            <a href="#" class="social-btn social-yt"></a>
         </div>
         <div class="footer-copyright">
-          <p>website by</p>
+          <span>website by</span>
           <a href="#" class="btn"><img src="./img/htmlacademy.png" alt=""></a>
         </div>
       </div>

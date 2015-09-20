@@ -12,7 +12,7 @@
       <div class="container">
         <nav class="main-navigation">
           <ul>
-            <li class="active">
+            <li>
               <a href="#">информация</a>
             </li>
             <li>
@@ -48,18 +48,19 @@
               </div>
           </div>
           <div class="filter-right-column">
-            <h3>стоимость в сутки(р):</h3>
+            <h3>стоимость в сутки(р):</h3><br>
             <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                <div class="internal-border"></div>
+              </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="margin-left: 20%; width: 30%"></div>
                 </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
               </div>
             </div>
             <input type="submit" class="filter-btn" value="показать">
@@ -140,14 +141,13 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="footer-social">
-          <ul>
-            <li><a href="#" class="social-btn social-tw"></a></li>
-            <li><a href="#" class="social-btn social-fb"></a></li>
-            <li><a href="#" class="social-btn social-yt"></a></li>
+          <a href="#" class="social-btn social-tw"></a>
+          <a href="#" class="social-btn social-fb"></a>
+          <a href="#" class="social-btn social-yt"></a>
           </ul>
         </div>
         <div class="footer-copyright">
-          <p>website by</p>
+          <span>website by</span>
           <a href="#" class="btn"><img src="./img/htmlacademy.png" alt=""></a>
         </div>
       </div>

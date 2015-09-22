@@ -129,15 +129,31 @@
       <div class="hotel-form">
         <div class="form-title"><h2>поиск гостиницы в седоне</h2></div>
         <form action="/echo" method="post">
-          <label for="arriv">дата заезда:</label>
-          <input type="date" id="arriv" value="2014-03-24"><br>
-          <label for="depart">дата выезда:</label>
-          <input type="date" id="depart" value="2014-07-04"><br>
+          <div class="hotel-dates">
+            <div class="arriv">
+              <label for="arriv">дата заезда:</label>
+              <input type="text" id="arriv" value="2014-03-24">
+              <a href=""><i></i></a>
+            </div>
+            <div class="depart">
+              <label for="depart">дата выезда:</label>
+              <input type="text" id="depart" value="2014-07-04">
+              <a href=""><i></i></a>
+            </div>
+          </div>
           <div class="adults-kids">
-            <label for="num-adults">взрослые:</label>
-            <input type="text" id="num-adults" value="2">
-            <label for="num-kids">дети:</label>
-            <input type="text" id="num-kids" value="0"><br>
+            <div class="adults">
+              <a href=""><i class="minus"></i></a>
+              <label for="num-adults">взрослые:</label>
+              <input type="text" id="num-adults" value="2">
+              <a href=""><i class="plus"></i></a>
+            </div>
+            <div class="kids">
+              <a href=""><i class="minus"></i></a>
+              <label for="num-kids">дети:</label>
+              <input type="text" id="num-kids" value="0">
+              <a href=""><i class="plus"></i></a>
+            </div>
           </div>
           <button type="submit" class="btn">найти</button>
         </form>

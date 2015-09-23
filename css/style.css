@@ -619,6 +619,7 @@ nav li a.active:hover {
 	display: inline;
 	font-size: 12px;
 	font-weight: normal;
+	width: 60%;
 }
 .sort ul {
 	display: inline;
@@ -682,6 +683,10 @@ nav li a.active:hover {
 .hotels-row .found-number {
 	font-size: 21px;
 	margin-right: 4.6%;
+}
+.hotels-row .criteria {
+	float: left;
+	font-size: 12px;
 }
 .hotels-row li a{
 	font-weight: normal;

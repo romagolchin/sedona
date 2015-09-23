@@ -149,6 +149,12 @@ nav li {
 nav li a:hover {
 	color: #81b3d2;
 }
+nav li a:active {
+	color: #766357;
+}
+nav li a.active:hover {
+	color: #604e43;
+}
 
 .jumbotron {
 	background-image: url(../img/jumbotron.jpg);
@@ -334,7 +340,7 @@ nav li a:hover {
 	border: 2px solid #e5e5e5;
 }
 .hotel-form input:focus {
-	border: none;
+	outline: 0;
 }
 .hotel-form .hotel-dates {
 	margin-top: 55px;
@@ -352,9 +358,9 @@ nav li a:hover {
 	font-weight: normal;
 	content: '\e800';
 	position: absolute;
-	right: 7px;
+	right: 63px;
 	top: 50%;
-	margin-top: -11px;
+	margin-top: -28px;
 	font-size: 21px;
 	color: #c2c2c2;
 }
@@ -379,24 +385,26 @@ nav li a:hover {
 .adults-kids input {
 	text-align: center;
 }
-.hotel-form input[id="num-adults"] {
+.adults-kids input {
 	width: 114px;
 } 
-.hotel-form input[id="num-kids"] {
-	width: 114px;
-} 
+.adults a, .kids a {
+	display: inline;
+}
 .hotel-form .adults .plus::before, 
 .hotel-form .kids .plus::before {
 	font-family: 'symbols-sedona';
-	content: '\e801';
 	position: absolute;
+	
+	content: '\e801';
 	left: 0;
 }
 .hotel-form .adults .minus::before, 
 .hotel-form .kids .minus::before {
 	font-family: 'symbols-sedona';
-	content: '\e802';
 	position: absolute;
+	left: 50px;
+	content: '\e802';
 	left: 0;
 }
 
@@ -424,23 +432,24 @@ nav li a:hover {
 	font-family: 'symbols-sedona';
 	display:  block;
 }
-.checkbox-item input[type="checkbox"] {
+.checkbox-item input {
 	display: none;
 } 
 .checkbox-item label {
 	margin-left: 20px;
 }
-.checkbox-item input[type="checkbox"] + label::before {
+.checkbox-item input + label::before {
 	content: '\2610'; 
 	margin-right: 20px;
-	opacity: .6;
+	opacity: .8;
 } 
-.checkbox-item input[type="checkbox"] + label:hover::before {
-	content: '\2610'; 
-	margin-right: 20px;
+.checkbox-item input + label:hover::before {
 	opacity: 1;
 } 
-.checkbox-item input[type="checkbox"]:checked + label::before {
+.checkbox-item input:disabled + label::before {
+	opacity: .4;
+} 
+.checkbox-item input:checked + label::before {
 	content: '\2611'; 
 } 
 .filter {
@@ -520,14 +529,16 @@ nav li a:hover {
   position: absolute;
   top: 16px;
   width: 4px;
-  max-height: 4px;
+  height: 4px;
   cursor: pointer;
   border: 8px solid #fff;
   border-radius: 50%;
-  background: #ababab;
+  background: #c2c2c2;
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-
+.toggle:hover {
+	background-color: #003366;
+}
 .range-controls .toggle-min {
 	display: block;
   left: 0px;
@@ -596,20 +607,21 @@ nav li a:hover {
 }
 .hotels-row {
 	min-height: 50px;
-	text-align: left;
-	padding-top: 35px;
 	padding: 35px 6% 0 6%;
 }
-.hotels-row span {
+.hotels-row .found-number {
 	float: left;
 	font-size: 21px;
 	font-weight: bold;
 }
-.sort ul {
+.sort {
 	float: left;
 	display: inline;
 	font-size: 12px;
 	font-weight: normal;
+}
+.sort ul {
+	display: inline;
 }
 .sort .arrows {
 	display: inline;
@@ -618,16 +630,24 @@ nav li a:hover {
 	font-size: 21px;
 	float: right;
 }
-.arrows .active ::before {
-	color: #81b3d2;
-}
 .arrows .ascend ::before {
 	content: '\25b2';
 }
 .arrows .descend ::before {
 	content: '\25bc';
 }
-.arrows ::before:hover{
+.arrows i::before {
+	color: #000;
+	opacity: .4;
+}
+.arrows i:hover ::before {
+	color: #000;
+	opacity: 1;
+}
+.arrows a:active ::before {
+	color: #81b3d2;
+}
+.arrows a.active:hover ::before {
 	color: #81b3d2;
 }
 .hotels-row li {
@@ -638,19 +658,24 @@ nav li a:hover {
 .hotels-row li a {
 	border-bottom: 1px dashed #81b3d2;
 	color: #000;
-	opacity: .6;
+	opacity: .4;
 }
 .hotels-row li a:hover {
 	border-bottom: 1px dashed #81b3d2;
 	color: #81b3d2;
-	opacity: .6;
+	opacity: 1;
 }
 .hotels-row li a:active {
-	
+	color: #000;
+	opacity: 1;
+	border: none;
 }
-.hotels-row li a:visited {
+.hotels-row li a.active:hover {
 	color: #81b3d2;
+	border: none;
+	opacity: 1;
 }
+
 .hotels-row div {
 	display: inline;
 }

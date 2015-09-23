@@ -324,12 +324,13 @@ nav li a.active:hover {
 	padding: 0;
 }
 .hotel-form input {
-	padding: 2px;
 	display: inline-block;
 	position: relative;
-	margin-bottom: 30px;
-	margin-left: 20px;
-	min-height: 36px;
+	margin-bottom: 32px;
+	margin-left: 22px;
+	margin-right: 2px;
+	margin-top: 2px;
+	height: 36px;
 	background-color: #f2f2f2;
 	border: none;
 }
@@ -337,13 +338,19 @@ nav li a.active:hover {
 	background-color: #ebebeb;
 }
 .hotel-form input:active {
-	margin: 0;
 	background-color: #fff;
 	border: 2px solid #e5e5e5;
+	height: 32px;
+	margin: 0 0 30px 20px;
 }
+/*
+.hotel-form .hotel-dates:active {
+	width: 315px;
+}
+*/
 .hotel-form input:focus {
 	outline: 0;
-	padding: 0;
+	margin: 0 0 30px 20px;
 }
 .hotel-form .hotel-dates {
 	margin-top: 55px;
@@ -389,26 +396,38 @@ nav li a.active:hover {
 	text-align: center;
 }
 .adults-kids input {
-	width: 114px;
+	width: 60px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
 } 
+.adults-kids label {
+	margin-right: 20px;
+}
 .adults a, .kids a {
-	display: inline;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f2f2f2;
+	height: 16px;
+	width: 15px;
+	padding: 10px 0;
+	text-align: center;
+}
+.adults label {
+	margin-right: 43px;
+}
+.adults-kids a:hover {
+	background-color: #ebebeb; 
 }
 .hotel-form .adults .plus::before, 
 .hotel-form .kids .plus::before {
 	font-family: 'symbols-sedona';
-	position: absolute;
-	
 	content: '\e801';
-	left: 0;
 }
 .hotel-form .adults .minus::before, 
 .hotel-form .kids .minus::before {
 	font-family: 'symbols-sedona';
-	position: absolute;
-	left: 50px;
 	content: '\e802';
-	left: 0;
 }
 
 .hotel-form label[for="num-kids"] {
@@ -452,6 +471,7 @@ nav li a.active:hover {
 } 
 .checkbox-item input:checked + label::before {
 	content: '\2611'; 
+	margin-right: 17px;
 } 
 .filter {
 	margin-top: -17px;
@@ -623,7 +643,7 @@ nav li a.active:hover {
 	max-width: 400px;
 }
 .sort .arrows {
-	
+	display: inline-block;
 	font-family: 'symbols-sedona';
 	font-size: 21px;
 	float: right;
@@ -651,7 +671,8 @@ nav li a.active:hover {
 .hotels-row li {
 	font-size: 12px;
 	display: inline-block;
-	margin-right: 2%;
+	vertical-align: top;
+	margin-right: 10%;
 }
 .hotels-row li a {
 	border-bottom: 1px dashed #81b3d2;
@@ -839,11 +860,11 @@ footer {
 	margin: 15px 0 0 0;
 	width: 80px;
 }
-.footer-copyright .logo {
+.main-footer .container .footer-copyright .logo {
 	min-width: 135px;
 	background-image: url(../img/htmlacademy_sprite.png);
 	background-repeat: no-repeat;
-	max-height: 40px;
+	height: 40px;
 }
 .footer-copyright .logo:hover {
 	background-position: 0 -40px;

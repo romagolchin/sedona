@@ -324,6 +324,7 @@ nav li a.active:hover {
 	padding: 0;
 }
 .hotel-form input {
+	padding: 2px;
 	display: inline-block;
 	position: relative;
 	margin-bottom: 30px;
@@ -336,11 +337,13 @@ nav li a.active:hover {
 	background-color: #ebebeb;
 }
 .hotel-form input:active {
+	margin: 0;
 	background-color: #fff;
 	border: 2px solid #e5e5e5;
 }
 .hotel-form input:focus {
 	outline: 0;
+	padding: 0;
 }
 .hotel-form .hotel-dates {
 	margin-top: 55px;
@@ -435,13 +438,11 @@ nav li a.active:hover {
 .checkbox-item input {
 	display: none;
 } 
-.checkbox-item label {
-	margin-left: 20px;
-}
 .checkbox-item input + label::before {
 	content: '\2610'; 
 	margin-right: 20px;
 	opacity: .8;
+	font-size: 21px;
 } 
 .checkbox-item input + label:hover::before {
 	opacity: 1;
@@ -486,6 +487,7 @@ nav li a.active:hover {
 .filter div .checkbox-list {
 	width: 100%;
 	line-height: 46px;
+	margin-top: 10px;
 }
 .filter h2 {
 	margin-top: 27px;
@@ -845,4 +847,16 @@ footer {
 .main-footer .container .footer-copyright div {
 	margin: 15px 0 0 0;
 	width: 80px;
+}
+.footer-copyright .logo {
+	min-width: 135px;
+	background-image: url(../img/htmlacademy_sprite.png);
+	background-repeat: no-repeat;
+	max-height: 40px;
+}
+.footer-copyright .logo:hover {
+	background-position: 0 -40px;
+}
+.footer-copyright .logo:active {
+	background-position: 0 -80px;
 }

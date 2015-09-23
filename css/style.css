@@ -323,13 +323,13 @@ nav li a.active:hover {
 	margin: 0;
 	padding: 0;
 }
+.hotel-form div {
+	margin-bottom: 30px;
+}
 .hotel-form input {
 	display: inline-block;
 	position: relative;
-	margin-bottom: 32px;
-	margin-left: 22px;
-	margin-right: 2px;
-	margin-top: 2px;
+	margin: 2px;
 	height: 36px;
 	background-color: #f2f2f2;
 	border: none;
@@ -341,19 +341,17 @@ nav li a.active:hover {
 	background-color: #fff;
 	border: 2px solid #e5e5e5;
 	height: 32px;
-	margin: 0 0 30px 20px;
+	margin: 0;
 }
-/*
-.hotel-form .hotel-dates:active {
-	width: 315px;
-}
-*/
 .hotel-form input:focus {
 	outline: 0;
-	margin: 0 0 30px 20px;
+	margin: 0;
 }
 .hotel-form .hotel-dates {
 	margin-top: 55px;
+}
+.hotel-dates label {
+	margin-right: 20px;
 }
 .hotel-form .hotel-dates div{
 	display: block;
@@ -370,7 +368,7 @@ nav li a.active:hover {
 	position: absolute;
 	right: 63px;
 	top: 50%;
-	margin-top: -28px;
+	margin-top: -16px;
 	font-size: 21px;
 	color: #c2c2c2;
 }
@@ -413,7 +411,7 @@ nav li a.active:hover {
 	padding: 10px 0;
 	text-align: center;
 }
-.adults label {
+.adults-kids label {
 	margin-right: 43px;
 }
 .adults-kids a:hover {
@@ -457,6 +455,9 @@ nav li a.active:hover {
 .checkbox-item input {
 	display: none;
 } 
+.checkbox-item label {
+	margin-top: -5px;
+}
 .checkbox-item input + label::before {
 	content: '\2610'; 
 	margin-right: 20px;
@@ -647,32 +648,37 @@ nav li a.active:hover {
 	font-family: 'symbols-sedona';
 	font-size: 21px;
 	float: right;
+	width: 30%;
+	display: inline-block;
 }
-.arrows .ascend ::before {
+.arrows .ascend::before {
 	content: '\25b2';
 }
-.arrows .descend ::before {
+.arrows .descend::before {
 	content: '\25bc';
 }
-.arrows i::before {
+.arrows a::before {
 	color: #000;
 	opacity: .4;
 }
-.arrows i:hover ::before {
+.arrows a:hover::before {
 	color: #000;
 	opacity: 1;
 }
-.arrows a:active ::before {
+.arrows a:active::before {
 	color: #81b3d2;
 }
-.arrows a.active:hover ::before {
+.arrows a.active:hover::before {
 	color: #81b3d2;
+}
+.hotels-row ul {
+	margin: 0;
 }
 .hotels-row li {
 	font-size: 12px;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 10%;
+	margin-right: 30px;
 }
 .hotels-row li a {
 	border-bottom: 1px dashed #81b3d2;

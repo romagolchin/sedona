@@ -618,17 +618,12 @@ nav li a.active:hover {
 }
 .sort {
 	float: left;
-	display: inline;
 	font-size: 12px;
 	font-weight: normal;
-	width: 60%;
-}
-.sort ul {
-	display: inline;
+	max-width: 400px;
 }
 .sort .arrows {
-	display: inline;
-	margin-left: 300px;
+	
 	font-family: 'symbols-sedona';
 	font-size: 21px;
 	float: right;
@@ -655,8 +650,8 @@ nav li a.active:hover {
 }
 .hotels-row li {
 	font-size: 12px;
-	display: inline;
-	width: 6.8%;
+	display: inline-block;
+	margin-right: 2%;
 }
 .hotels-row li a {
 	border-bottom: 1px dashed #81b3d2;
@@ -677,10 +672,6 @@ nav li a.active:hover {
 	color: #81b3d2;
 	border: none;
 	opacity: 1;
-}
-
-.hotels-row div {
-	display: inline;
 }
 .hotels-row .found-number {
 	font-size: 21px;

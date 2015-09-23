@@ -36,19 +36,34 @@
         <form action="">
           <div class="features"><h2>инфраструктура:</h2>
               <div class="checkbox-list">
-                <div class="checkbox-item" id="pool"><input type="checkbox">
-                <label for="pool">бассейн</label></div>
-                <div class="checkbox-item"><input type="checkbox">
-                <label for="">парковка</label></div>
-                <div class="checkbox-item"><input type="checkbox">
-                <label for="">wi-fi</label></div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="pool">
+                    <label for="pool">бассейн</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="parking">
+                    <label for="parking">парковка</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="wi-fi">
+                    <label for="wi-fi">wi-fi</label>
+                </div>
               </div>
           </div>
           <div class="type"><h2>тип жилья:</h2>
               <div class="checkbox-list"> 
-                <div class="checkbox-item"><input type="checkbox"><label for="">гостиница</label></div>
-                <div class="checkbox-item"><input type="checkbox"><label for="">мотель</label></div>
-                <div class="checkbox-item"><input type="checkbox"><label for="">апартаменты</label></div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="hotel">
+                    <label for="hotel">гостиница</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="motel">
+                    <label for="motel">мотель</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="apts">
+                    <label for="apts">апартаменты</label>
+                </div>
               </div>
           </div>
           <div class="filter-right-column">
@@ -79,20 +94,19 @@
       </div>
 
       <div class="hotels-row">
-        <span class="found-number">найдено: 3</span>
-        <span class="criteria">сортировка</span>
+        <div class="found-number">найдено: 3</div>
+        <div class="criteria">сортировка</div>
         <div class="sort">
-          
           <ul>
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
-          <div class="arrows">
-            <a href="" class="ascend"><i></i></a>
-            <a href="" class="descend"><i></i></a>
-          </div>
         </div>  
+        <div class="arrows">
+          <a href="" class="ascend"><i></i></a>
+          <a href="" class="descend"><i></i></a>
+        </div>
       </div>
       
       <div class="hotels-list">

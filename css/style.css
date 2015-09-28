@@ -167,7 +167,7 @@ nav li a.active:hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	padding-top: 75px;
 }
 .jumbo-text {
@@ -225,11 +225,11 @@ nav li a.active:hover {
 }
 .advantages-row-pictures div img{
 	margin-top: 42px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .advantages-row-pictures div h2{
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 
 }
 .advantages-row-pictures div p{
@@ -267,7 +267,7 @@ nav li a.active:hover {
 	margin-bottom: 50px;
 }
 .advantages-row-more h2 {
-	margin-top: 50px;
+	margin-top: 43px;
 }
 .advantages-row-more span {
 	margin-top: 30px;
@@ -291,7 +291,7 @@ nav li a.active:hover {
 }
 
 .hotels-annotaion {
-	margin-bottom: 155px;
+	margin-bottom: 130px;
 	position: relative;
 	line-height: 24px;
 }
@@ -304,11 +304,11 @@ nav li a.active:hover {
 }
 .hotel-form {
 	left: 50%;
-	top: 177px;
+	top: 154px;
 	margin-left: -283px;
 	position: absolute;
 	min-height: 483px;
-	width: 565px;
+	width: 567px;
 	background-color: #fff;
 	font-weight: bold;
 }
@@ -323,42 +323,55 @@ nav li a.active:hover {
 	margin: 0;
 	padding: 0;
 }
-.hotel-form div {
-	margin-bottom: 30px;
+.hotel-form form{
+	padding: 0 50px;
+}
+.hotel-form .hotel-dates {
+	text-align: right;
 }
 .hotel-form input {
 	display: inline-block;
 	position: relative;
-	margin: 2px;
 	height: 36px;
 	background-color: #f2f2f2;
 	border: none;
+	box-sizing: border-box;
 }
 .hotel-form input:hover {
 	background-color: #ebebeb;
 }
-.hotel-form input:active {
+.hotel-form .hotel-dates input:active {
 	background-color: #fff;
-	border: 2px solid #e5e5e5;
-	height: 32px;
-	margin: 0;
+	/*margin: 0 0 0 2px;*/
 }
 .hotel-form input:focus {
 	outline: 0;
 	margin: 0;
 }
+.hotel-form .hotel-dates input {
+	/*margin: 0 2px;*/
+}
+.hotel-form .hotel-dates input:active {
+	border: 2px solid #e5e5e5;
+	/*height: 32px;*/
+	padding-left: 13px;
+	/*width: 326px;*/
+}
 .hotel-form .hotel-dates {
 	margin-top: 55px;
 }
+.hotel-dates div {
+	margin-bottom: 32px;
+}
 .hotel-dates label {
-	margin-right: 20px;
+	margin-right: 22px;
 }
 .hotel-form .hotel-dates div{
 	display: block;
 	position: relative;
 }
 .hotel-form .hotel-dates input{
-	width: 319px;
+	width: 345px;
 	padding-left: 15px;
 } 
 .hotel-form .hotel-dates i::before {
@@ -366,9 +379,9 @@ nav li a.active:hover {
 	font-weight: normal;
 	content: '\e800';
 	position: absolute;
-	right: 63px;
+	right: 13px;
 	top: 50%;
-	margin-top: -16px;
+	margin-top: -11px;
 	font-size: 21px;
 	color: #c2c2c2;
 }
@@ -383,36 +396,45 @@ nav li a.active:hover {
 	color: #81b3d2;
 }
 .adults-kids {
-	text-align: left;
-	padding-left: 55px;
+	text-align: right;
+	margin-bottom: 55px;
 }
 .adults-kids div {
 	display: inline-block;
 	position: relative;
 }
-.adults-kids input {
-	text-align: center;
+.adults-kids label {
+	display: inline-block;
+	height: 28px;
+	padding-top: 8px;
 }
 .adults-kids input {
-	width: 60px;
+	text-align: center;
+	vertical-align: top;
+}
+.adults-kids input {
+	width: 40px;
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0;
 } 
-.adults-kids label {
-	margin-right: 20px;
+.adults-kids input:active {
+	border: 2px solid #e5e5e5;
 }
 .adults a, .kids a {
 	display: inline-block;
 	vertical-align: top;
 	background-color: #f2f2f2;
 	height: 16px;
-	width: 15px;
+	width: 37px;
 	padding: 10px 0;
 	text-align: center;
 }
 .adults-kids label {
-	margin-right: 43px;
+	margin-right: 42px;
+}
+.adults-kids .kids label {
+	margin-right: 25px;
 }
 .adults-kids a:hover {
 	background-color: #ebebeb; 
@@ -429,16 +451,17 @@ nav li a.active:hover {
 }
 
 .hotel-form label[for="num-kids"] {
-	margin-left: 65px;
+	margin-left: 51px;
 }
 .hotel-form button[type="submit"] {
 	border: none;
-	width: 81%;
+	width: 100%;
 	background-color: #81b3d2;
 	min-height: 58px;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 21px;
+	padding: 0;
 }
 .hotel-form button[type="submit"]:hover {
 	background-color: #669ec0;
@@ -455,14 +478,12 @@ nav li a.active:hover {
 .checkbox-item input {
 	display: none;
 } 
-.checkbox-item label {
-	margin-top: -5px;
-}
 .checkbox-item input + label::before {
 	content: '\2610'; 
-	margin-right: 20px;
+	margin-right: 22px;
 	opacity: .8;
-	font-size: 21px;
+	font-size: 26px;
+	vertical-align: middle;
 } 
 .checkbox-item input + label:hover::before {
 	opacity: 1;
@@ -472,7 +493,8 @@ nav li a.active:hover {
 } 
 .checkbox-item input:checked + label::before {
 	content: '\2611'; 
-	margin-right: 17px;
+	margin-right: 18px;
+	vertical-align: middle;
 } 
 .filter {
 	margin-top: -17px;
@@ -496,12 +518,12 @@ nav li a.active:hover {
 }
 .filter .features, .filter .type {
 	float: left;
-	width: 24%;
+	width: 24.2%;
 	min-height: 215px;
 }
 .filter-right-column {
 	float: right;
-	width: 29.2%;
+	width: 316px;
 	position: relative;
 	min-height: 215px;
 }
@@ -516,18 +538,16 @@ nav li a.active:hover {
 	font-size: 16px;
 }
 .range-filter {
-	margin-top: 15px;
-  width: 240px;
+	margin-top: 11px;
+  width: 313px;
 }
 
 .range-controls {
 	display: block;
   position: relative;
   max-height: 41px;
-  min-width: 330px;
-  padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 313px;
+  padding-top: 21px;
   margin-bottom: 15px;
   border-radius: 5px;
   background: transparent;
@@ -537,7 +557,7 @@ nav li a.active:hover {
 	display: block;
   height: 2px;
   background: #918382;
-  width: 308px;
+  width: 315px;
 }
 
 .range-controls .bar {
@@ -550,7 +570,7 @@ nav li a.active:hover {
 .range-controls .toggle {
 	display: block;
   position: absolute;
-  top: 16px;
+  top: 12px;
   width: 4px;
   height: 4px;
   cursor: pointer;
@@ -576,7 +596,7 @@ nav li a.active:hover {
   font-size: 0;
   border: 2px solid #fff;
   position: relative;
-  width: 315px;
+  width: 313px;
   max-height: 18px;
   padding: 7px 0;
 }
@@ -601,7 +621,8 @@ nav li a.active:hover {
 
 .filter .min-price,
 .filter .max-price {
-	width: 50%;
+	width: 45%;
+	padding-left: 5%;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
@@ -624,13 +645,13 @@ nav li a.active:hover {
 	left: 50%;
 	width: 135px;
 	min-height: 35px;
-	margin-left: -85px;
+	margin-left: -73px;
 	text-transform: uppercase;
 	border: 2px solid #fff;
 }
 .hotels-row {
-	min-height: 50px;
-	padding: 35px 6% 0 6%;
+	height: 55px;
+	padding: 30px 6% 0 6%;
 }
 .hotels-row .found-number {
 	float: left;
@@ -643,12 +664,11 @@ nav li a.active:hover {
 	font-weight: normal;
 	max-width: 400px;
 }
-.sort .arrows {
+.arrows {
 	display: inline-block;
 	font-family: 'symbols-sedona';
-	font-size: 21px;
+	font-size: 23px;
 	float: right;
-	width: 30%;
 	display: inline-block;
 }
 .arrows .ascend::before {
@@ -708,6 +728,9 @@ nav li a.active:hover {
 	float: left;
 	font-size: 12px;
 }
+.criteria, .sort {
+	margin-top: 5px;
+}
 .hotels-row li a{
 	font-weight: normal;
 }
@@ -721,6 +744,7 @@ nav li a.active:hover {
 }
 .hotel-info:last-child {
 	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 5px;
 }
 .hotel-info div {
 	display: inline-block;
@@ -743,6 +767,7 @@ nav li a.active:hover {
 	color: #81b3d2;
 }
 .hotel-info .descr h2:active {
+	color: #000;
 	opacity: .3;
 }
 a.btn {
@@ -785,8 +810,9 @@ a.btn {
 	margin-right: 40px;
 }
 .hotel-info .stars-and-rating {
-	width: 43.9%;
+	width: 23.9%;
 	text-align: right;
+	float: right;
 }
 .hotel-info .stars {
 	color: #81b3d2;
@@ -807,7 +833,7 @@ a.btn {
 }
 
 .hotel-info .rating {
-	margin-top: 90px;
+	margin-top: -30px;
 	background-color: #f2f2f2;
 	width: 110px;
 	padding: 8px 0;
@@ -816,7 +842,7 @@ a.btn {
 footer {
 	background-color: #fff;
 	height: 74px;
-	padding-top: 46px;
+	padding-top: 41px;
 	opacity: .9;
 	text-align: left;
 }
@@ -827,8 +853,22 @@ footer {
 	text-align: center;
 	vertical-align: top;
 	display: inline-block;
+	height: 110px;
+}
+.footer-hashtag {
 	width: 33%;
-	min-height: 110px;
+}
+.footer-social, .footer-copyright {
+	margin-top: -10px;
+}
+.footer-social {
+	width: 34%;
+}
+.footer-copyright {
+	width: 33%;
+}
+.main-footer .container .footer-copyright {
+	text-align: center;
 }
 .social-btn {
     display: inline-block;
@@ -863,11 +903,15 @@ footer {
 	content: '\f39e';
 }
 .main-footer .container .footer-copyright div {
-	margin: 15px 0 0 0;
+	margin-top: 15px;
 	width: 80px;
+}
+.site-by {
+	margin: -5px 7px 0 0;
 }
 .main-footer .container .footer-copyright .logo {
 	min-width: 135px;
+	margin-top: 4px;
 	background-image: url(../img/htmlacademy_sprite.png);
 	background-repeat: no-repeat;
 	height: 40px;
@@ -876,5 +920,5 @@ footer {
 	background-position: 0 -40px;
 }
 .footer-copyright .logo:active {
-	background-position: 0 -80px;
+	background-position: 0 -81px;
 }
